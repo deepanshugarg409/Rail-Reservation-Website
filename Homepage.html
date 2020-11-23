@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<script>
+function ShowPassword()
+{
+var a=document.getElementById("id1");
+if(a.type==="password")
+    a.type="text";
+else
+    a.type="password";
+}
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'><!--for social icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--for mail icon-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>    
+html
+{
+scroll-behavior: smooth;
+}
+.carousel-inner img 
+{
+width: 100%;
+height: 100%;
+}
+h1
+{
+padding-top: 10px;    
+font-family: sans-serif;
+font-size: 50px;
+font-weight: bold;
+color:black;
+opacity: 0.8;
+text-shadow: 1px 1px 2px dodgerblue;
+} 
+.button 
+{
+opacity: 0.8;
+border: none;
+color: white;
+background-color: transparent;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+margin-right: 20px;
+font-weight: bold;
+border-radius: 12px;
+transition-duration: 0.4s;         
+}
+.b1:hover
+{
+opacity: 1;
+background-color:slateblue;
+color: white; 
+background-color: transparent;
+}                 
+.m
+{
+margin-right: 5%;
+margin-left: 5%;
+}
+.m2
+{
+height: 35rem;
+width: 100%;
+}
+a
+{
+text-decoration:none; 
+color:white;
+text-align: center;
+}
+</style>
+<style>
+.footer-section 
+{
+background: radial-gradient(at top center, #24305f 0%, #10162b 100%);
+padding: 70px 0px 0px 0px;
+}
+.single-footer>img 
+{
+margin: 0 0 12px;
+}
+.single-footer p 
+{
+color: #fff;
+}
+.single-footer ul.single-footer-list 
+{
+list-style: outside none none;
+padding-left: 0;
+}
+.single-footer ul.single-footer-list li, .single-footer ul.single-footer-list li a 
+{
+color: #fff;
+letter-spacing: 0;
+line-height: 36px;
+}
+.single-footer ul.single-footer-list li a:hover 
+{
+color: #ff7348;
+}
+.single-footer ul.single-footer-list li a span 
+{
+font-size: 8px;
+margin-right: 6px;
+position: relative;
+top: 0px;
+}
+.single-footer-title 
+{
+color: #ffffff;
+font-weight: 600;
+letter-spacing: 0;
+margin: 0 0 10px;
+}
+.footer-social 
+{
+list-style: outside none none;
+padding: 0;
+margin-top: 15px;
+}
+.footer-social li 
+{
+display: inline-block;
+height: 36px;
+width: 36px;
+margin-right: 7px;
+}
+.footer-social li a 
+{
+background: #6346fe;
+border-radius: 50%;
+color: #fff;
+display: block;
+font-size: 16px;
+height: 100%;
+line-height: 36px;
+text-align: center;
+}
+.footer-social li a:hover 
+{
+background: #ff7348 none repeat scroll 0 0;
+}
+.footer-top-block 
+{
+margin: 0 0 70px;
+}
+.footer-bottom 
+{
+padding: 15px 0px;
+}
+.footer-bottom-block 
+{
+background-color: #1a2345;
+}
+.footer-copyright p 
+{
+color: #fff;
+line-height: 30px;
+}
+.footer-links ul 
+{
+list-style: outside none none;
+padding: 0;
+float: right;
+}
+.footer-links ul li 
+{
+margin-left: 28px;
+float: left;
+}
+.footer-links ul li a 
+{
+color: #e5e5e5;
+display: block;
+font-size: 14px;
+margin-top: 6px;
+letter-spacing: 0;
+}
+.popup
+{
+background:rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+display:none;
+}
+.close
+{
+position:absolute;
+height:40px;
+width:40px;
+margin-left:250px;
+margin-top:10px;
+cursor:pointer;
+}
+::placeholder
+{
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+}
+.butn:hover
+{
+          background-color:black;
+          color: white;
+          border:2px solid black;
+}
+.style
+{
+  margin-top: 140px;
+  padding-top: 0.5px;
+  border-radius: 30px;
+  margin-left: 300px;
+  height: 450px;
+  width: 710px;
+  padding-left: 15px;
+  background-color:white;
+  color:black;
+  box-shadow: 6px 6px 15px;
+}
+input[type="text"],[type="password"]
+{
+  width:400px;
+  border:none;
+  border-bottom:3px solid black;
+  background: transparent;
+  outline: none;
+  font-size: 20px;
+  height: 30px;
+  text-align: center;
+  transition: 0.9s all;
+}
+input:focus
+{
+font-size:23px;   
+}
+.butn
+{
+    color:black;
+    background-color:#3b5998;
+    border-color:black;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 20px; 
+    display: block;
+    width: 425px;
+    font-weight: bold;
+    height: 50px;
+    margin-left: 103px;
+    transition: 0.9s all;
+}
+</style>
+</head>
+<body>        
+<header>   
+<img src="logo.jpeg" height="90" width="140" style="position: absolute; border-radius: 35%; margin-left:0%;">
+<h1 style="text-align: center;">TICKET BOOK KARLO</h1>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Indian_Railway.svg/1200px-Indian_Railway.svg.png" height="100" width="100" style="position: static;margin-left: 92%; margin-top:-70px;">
+</header>
+<section style="background-color: SlateBlue;" >
+<div class="m">
+<a href="Homepage.html"><button type="button" class="button b1" id="home">HOME</button></a>
+<a href="#" id="click"><button type="button" class="button b1">LOGIN</button></a>
+<a href="Signup.jsp"><button type="button" class="button b1">REGISTER</button></a>
+<a href="Terms&Conditions.html"><button type="button" class="button b1">ABOUT US</button></a>
+<a href="Terms&Conditions1.html"><button type="button" class="button b1">Terms&Conditions</button></a>
+<a href="mailto:@gmail.com?Subject=HELLO"><button type="button" class="button b1">FEEDBACK</button>
+<a href="#Contact"><button type="button" class="button b1">CONTACT US</button></a>
+</section>
+<section id="d" class="carousel slide" data-ride="carousel">
+<div class="m">
+<!-- Indicators -->
+<ul class="carousel-indicators">
+<li data-target="#d" data-slide-to="0" class="active"></li>
+<li data-target="#d" data-slide-to="1"></li>
+<li data-target="#d" data-slide-to="2"></li>
+<li data-target="#d" data-slide-to="3"></li>
+<li data-target="#d" data-slide-to="4"></li>
+<li data-target="#d" data-slide-to="5"></li>
+<li data-target="#d" data-slide-to="6"></li>
+</ul>
+<!-- The slideshow -->
+<div class="carousel-inner">
+<div class="carousel-item active m2">
+<img src="https://www.lawctopus.com/wp-content/uploads/2019/03/Railways.png" alt="CONNECT FROM INTERNET">
+</div>
+<div class="carousel-item m2">
+<img src="https://smedia2.intoday.in/btmt/images/stories/indian_railway_660_050418065654.jpg" alt="CONNECT FROM INTERNET">
+</div>
+<div class="carousel-item m2">
+<img src="https://mercomindia.com/wp-content/uploads/2019/05/ADB-Provides-750-Million-Loan-to-Indian-Railways-for-Transitioning-to-Electric-Power.png" alt="CONNECT FROM INTERNET" >
+</div>
+<div class="carousel-item m2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/86/BNSF_5350_20040808_Prairie_du_Chien_WI.jpg" alt="CONNECT FROM INTERNET">
+</div>
+<div class="carousel-item m2">
+<img src="https://images.unsplash.com/photo-1442570468985-f63ed5de9086?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="CONNECT FROM INTERNET">
+</div>
+<div class="carousel-item m2">
+<img src="http://im.rediff.com/money/2019/jan/02train.jpg" alt="CONNECT FROM INTERNET">
+</div>
+<div class="carousel-item m2">
+<img src="http://images.newindianexpress.com/uploads/user/imagelibrary/2019/2/21/w900X450/Indian_railways_1.jpg" alt="CONNECT FROM INTERNET">
+</div>
+</div>
+<!-- Left and right controls -->
+<a class="carousel-control-prev" href="#d" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#d" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
+</div>
+</section>
+<!-- Login Popup-->     
+<section>    
+<div class="popup">       
+<div class="style">    
+<img src="images/Id.png" style="height:120px;width:120px;margin-left:270px;margin-top:10px;">    
+<img src="images/Close.png" class="close"><br><br>
+<form action="LoginModule.jsp">
+<i class="fas fa-user" style="margin-left:100px;font-size:30px;"> <input type="text" style="font-weight:bold;font-family:sans-serif;" name="t1" placeholder="Enter User-Id" required></i><br><br><br>
+<i class="fas fa-lock" style="margin-left:100px;font-size:30px;"> <input type="password" style="font-weight:bold;font-family:sans-serif;" id="id1" name="t2" placeholder="Password" required></i><br><br><br>
+<input type="checkbox" onclick="ShowPassword()" name="cb1" style="margin-left:104px;"><font style="font-size:20px;font-weight:bold;font-family:sans-serif;">Show Password</font>
+<a href="ForgotPassword.html" class="text" style="color: black;font-size: 20px;font-family: sans-serif;font-weight: bold;font-size:21px;margin-left:85px;">Forgot Password</a><br><br>
+<button class="butn">Login</button>      
+</form>
+</div>   
+</div>    
+<script>
+document.getElementById("click").addEventListener("click",function(){document.querySelector(".popup").style.display="flex";})    
+document.querySelector(".close").addEventListener("click",function(){document.querySelector(".popup").style.display="none";})
+</script> 
+</section>
+<br>
+<center><p style="font-size:48px;text-decoration:bolder;">ABOUT SPECIAL TRAINS</p></center>
+<section>    
+<div class="m" style="border-radius:20px;">
+<table style="width:100%; height: 41rem;">
+<tr>
+<td>
+<div class="card" style="width:26rem; height: 41rem;">
+<img class="card-img-top" src="https://www.irctc.co.in/nget/assets/images/exterior.jpg" style="width:100%; height:48%;">
+<div class="card-body"  style="background-color:#F5F5DC;">
+<h4 class="card-title">Maharaja's Express</h4>
+<p class="card-text">Redefining Royalty, Luxury and Comfort, Maharajas’ express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+<br><a href="https://www.the-maharajas.com/index" class="btn btn-primary stretched-link" target="_blank" >SEE MORE</a>
+</div>
+</div>
+</td>
+<td>
+<div class="card" style="width:26rem; height: 41rem;">
+<img class="card-img-top" src="https://www.irctc.co.in/nget/assets/images/Buddha_Banner.jpg" style="width:100%; height:48%;">
+<div class="card-body"  style="background-color:#F5F5DC;">
+<h4 class="card-title">Buddhist Circuit Tourist Train</h4>
+<p class="card-text">India, the country where Buddhism originated has rich memories of the Buddhist legacy. As part of its drive towards austerity, the only kind of art & architecture that it supported were Stupas, Chaityas & Viharas. Buddhist Train India will help you visit all these places up close for a truly religious experience.</p>
+<br><br><br><a href="https://www.irctcbuddhisttrain.com/" class="btn btn-primary stretched-link" target="_blank" >SEE MORE</a>
+</div>
+</div>
+</td>
+<td>
+<div class="card" style="width:26rem; height: 41rem;">
+<img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7YkMdLLJQ-T719rydA0gyI3aM3hqaJkjs6Yz1sdsFuyZ4lMf" style="width:100%; height:48%;">
+<div class="card-body" style="background-color:#F5F5DC;">
+<h4 class="card-title">MUMBAI RAJDHANI EXPRESS</h4>
+<p class="card-text">The 12951/12952 Mumbai Rajdhani Express is a super fast express train of Rajdhani class belonging to Indian Railways that runs between Mumbai Central and New Delhi in India.<br><b>Average journey time:</b> 16 hours 0 minutes <br><b>Start:</b> Mumbai Central<br><b>First service:</b> 17 May 1972<br><b>End:</b> New Delhi railway station<br><b>Current operator:</b> Western Railway zone.</p>
+<a href="https://en.wikipedia.org/wiki/Mumbai_Rajdhani_Express" class="btn btn-primary stretched-link" target="_blank">SEE MORE</a>
+</div>
+</div>
+</td>  
+</table>
+</div>
+</section>
+<footer class="footer-section background-with-black">
+  <div class="footer-top-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="single-footer"> <img src="logo.jpeg" style="width: 170px; border-radius:20px;">
+            <p>TICKETBOOKKARLO.COM<BR>We are committed to deliver best services and support.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="single-footer">
+            <h3 class="single-footer-title">Useful Links</h3>
+            <ul class="single-footer-list">
+              <li><a href="#home"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Home</a></li>
+              <li><a href="policy.php"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Privacy Policy</a></li>
+              <li><a href="disclaimer.php"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> FAQ</a></li>
+              <li><a href="terms.php"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Terms &amp; Conditions</a></li>
+              <li><a href="careers.php"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="single-footer" id="Contact">
+            <h3 class="single-footer-title">Contact Us</h3>
+            <ul class="single-footer-list">
+              <li>Phone: 1800-XXX-XXXX</li>
+              <li>Email: info@ticketbookkarlo.com</li>
+            </ul>
+            <ul class="footer-social">
+              <li><a href="#"><i class='fab'style="color:white">  &#xf39e;</i></a></li>
+              <li><a href="#"><i  class='fab'style="color:white">&#xf099;</i></a></li>
+              <li><a href="#"><i  class='fab' style="color:white">&#xf0d5;</i></a></li>
+              <li><a href="#"><i  class='fab'>&#xf0e1;</i></a></li>
+              <li><a href="#"><i  class='fab' style="color:white">&#xf16d;</i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="single-footer">
+            <br>
+            <img src="https://www.talkhomeapp.com/images/apps/download_app_google_play.svg" style="height: 55px; width: 210px;">
+            <br>
+            <img src="https://speedify.com/wp-content/uploads/App_Store_Badge_EN.png" style="height: 80px; width: 210px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-block">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="footer-copyright">
+              <p>Copyright © 2019 TicketBookKarlo. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
